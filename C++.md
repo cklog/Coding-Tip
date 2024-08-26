@@ -1,0 +1,21 @@
+# C++ 코드
+
+
+## 소수점 출력하기
+```
+int a=10;
+int b=3;
+
+cout.precision(3);        // 총 출력할 숫자의 수 설정
+cout << a/(double)b;      // 3.33
+
+cout << fixed;            // 소수점 아래 설정
+cout.precision(3);
+cout << a/(double)b;      // 3.333
+    
+cout.unsetf(ios::fixed);  // 설정 해제
+cout << a/(double)b;      // 3.33
+```
+
+
+
